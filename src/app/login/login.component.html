@@ -1,0 +1,29 @@
+
+    <div class="login-container surface-card shadow-1 border-round p-5">
+        <div class="mb-5 flex justify-content-center">
+            <img ngSrc="assets/images/logos/hrms.jpg" alt="" width="100" height="50">
+      </div> 
+      <div class="grid">
+        <div class="col-6">
+            <div class="grid gap-3">
+                <p-floatlabel variant="on" class="w-full">
+                    <input pInputText id="userName" [(ngModel)]="username" pSize="large" autocomplete="off" style="width: 100%"/>
+                    <label for="userName">User Name</label>
+                </p-floatlabel>
+                <p-floatlabel variant="on" class="w-full">
+                    <p-password [(ngModel)]="password" [inputStyle]="{'width': '100%'}" type="text" size="large" [toggleMask]="true" [style]="{'width': '100%'}"/>
+                    <label for="password">Password</label>
+                </p-floatlabel>
+                <p-button label="Login" (click)="onsubmit()" severity="warn" />
+            </div>  
+            <p-divider align="center" type="dotted">
+               <p class="text-muted">or</p>
+         </p-divider>
+     
+        </div>
+        <div class="col-6 flex align-items-center justify-content-center">
+            <img ngSrc="assets/images/logos/hrmsLog.png" alt="Sample Image" width="250" height="200">
+        </div>
+    </div>
+              
+    </div>

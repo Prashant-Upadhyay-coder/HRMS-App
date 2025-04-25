@@ -1,0 +1,12 @@
+<div class="layout-wrapper layout-static  h-full">
+    <div class="flex gap-3 h-full">
+        <!-- Fixed sidebar -->
+                <app-sidebar></app-sidebar>
+        <!-- Scrollable main content -->
+        <div class="w-full overflow-hidden overflow-y-auto" >
+            <div class="main ">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>

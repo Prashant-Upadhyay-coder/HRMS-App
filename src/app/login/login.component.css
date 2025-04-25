@@ -1,0 +1,32 @@
+.login-container{
+    width: 100%;
+    max-width: 50rem;
+    margin: 15rem auto;
+}
+.p-password input {
+    width: 100% !important;
+}.custom-google-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #4285F4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .custom-google-button:hover {
+    background: #3367D6;
+  }
+  .custom-google-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background: white;
+    padding: 5px;
+    border-radius: 2px;
+  }

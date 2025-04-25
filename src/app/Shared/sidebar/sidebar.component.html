@@ -1,0 +1,35 @@
+<div class="p-3 surface-100 border-round h-full" style="position: sticky; top: 0;">
+    <div class="image flex align-items-center justify-content-center">
+             <img ngSrc="assets/images/logos/hrms.jpg" alt="hrmslogo" width="35" height="35">
+    </div>
+    <div class="flex flex-column gap-3 mt-8">
+        <a class="p-3 cursor-pointer border-round text-900 hover:bg-primary-900 hover:text-500" 
+           [routerLink]="['/home/dashboard']" routerLinkActive="bg-primary">
+            <i class="pi pi-home"></i>
+            <span class="hidden">・</span>
+            <span class="hidden">Dashboard</span>
+        </a>
+        <a class="p-3 cursor-pointer border-round text-900 hover:bg-primary-900 hover:text-500"  
+           [routerLink]="['/home/employee']" routerLinkActive="bg-primary">
+            <i class="pi pi-address-book"></i>
+            <span class="hidden">・</span>
+            <span class="hidden">Employee</span>
+        </a>
+        <a class="p-3 cursor-pointer border-round text-900 hover:bg-primary-900 hover:text-500"  [routerLink]="['/home/map']" routerLinkActive="bg-primary">
+            <i class="pi pi-map"></i>
+            <span class="hidden">・</span>
+            <span class="hidden">Map</span>
+        </a>
+        <a class="p-3 cursor-pointer border-round text-900 hover:bg-primary-900 hover:text-500"  [routerLink]="['/home/video']" routerLinkActive="bg-primary">
+            <i class="pi pi-video"></i>
+            <span class="hidden">・</span>
+            <span class="hidden">Video</span>
+        </a>
+        <a class="p-3 cursor-pointer border-round text-900 hover:bg-primary-900 hover:text-500">
+            <i class="pi pi-spin pi-cog"></i>
+            <span class="hidden">・</span>
+            <span class="hidden">Setting</span>
+        </a>
+        <p-toggleswitch [(ngModel)]="checked"   (onChange)="toggleDarkMode($event.checked)"/>
+    </div>
+</div>

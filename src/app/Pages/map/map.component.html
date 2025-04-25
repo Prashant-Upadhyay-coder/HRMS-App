@@ -1,0 +1,13 @@
+<!-- google-maps-demo.component.html -->
+<!-- google-maps-demo.component.html -->
+<div class="grid justify-content-between align-items-center px-2 py-2">
+  <app-breadcrumb [items]="items"></app-breadcrumb>
+</div>
+
+<google-map height="280" width="390" [center]="center" [zoom]="zoom">
+    <map-bicycling-layer />
+    <map-traffic-layer [autoRefresh]="false" />
+    <map-kml-layer [url]="kmlUrl" />
+    <map-rectangle [bounds]="bounds" />
+    <map-transit-layer />
+  </google-map>
